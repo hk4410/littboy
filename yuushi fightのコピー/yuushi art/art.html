@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+        <meta name="description" content="福岡で活動中のフリーイラストレーター">
+        <title>littboy</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href = "../yuushi/index.html"><img src = "../img/littboy.png"></a>
+        </header>
+        <main>
+            <h2>ART</h2>
+            <div id="app">
+                <ul>
+                    <image-lists 
+                    v-for="image in images" 
+                    v-bind:key="image.id" 
+                    v-bind:image="image" 
+                    ></image-lists>
+                </ul>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p class = "page-content">&copy; 2021 littboy.</p>
+            <p class="pagetop">
+                <a href="#">
+                <i class="fas fa-chevron-up"></i>
+                </a>
+            </p>
+        </footer>
+        
+        <script src="main.js"></script>
+    </body>
+    

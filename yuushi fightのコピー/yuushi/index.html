@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+        <meta name="description" content="福岡で活動中のフリーイラストレーター">
+        <title>littboy</title>
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class = "container" id = "app">
+                <div class = "header1">
+                    <img src = "../img/littboy1.png">
+                </div>
+                <div class = "header2" v-on:click="sikko_1(); sikko_2()">
+                    <i class= "fas fa-angle-double-right fa-border" v-bind:class="{black: white}"></i>
+                </div>
+                <transition mode="out-in">
+                    <div class = "sidebody" v-if="unko">
+                        <aside name="fade">
+                            <img src = "../img/3.JPG">
+                            <p>artist</p>
+                            <h5>Yuushi Miho</h4>
+                            <a href = "https://www.instagram.com/littboy_xx">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href = "https://twitter.com/littboy_xx">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </aside>
+                        <ul>
+                            <li><a href = "../yuushi art/art.html">ART</a></li>
+                            <li><a href = "../yuushi contact/contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </transition>
+            </div>
+        </header>
+        <div class = "wrapper">
+            <div class = "main">
+                <h2>news</h2>
+                <section class = "news">
+                    <div class = "news1">
+                        <img src = "../img/12.JPG">
+                        <p>2021/08/25</p>
+                        <p>p＆pコラボTシャツ</p>
+                    </div>
+                    <div class = "countdown-container">
+                            
+                          <div class "countdown-el days-c">
+                            <p class = "big-text" id = "days">0</p>
+                            <span>days</span>
+                          </div>
+                          
+                          <div class "countdown-el hours-c">
+                            <p class = "big-text" id = "hours">0</p>
+                            <span>hours</span>
+                          </div>
+                          
+                          <div class "countdown-el mins-c">
+                            <p class = "big-text" id = "mins">0</p>
+                            <span>mins</span>
+                          </div>
+                          
+                          <div class "countdown-el seconds-c">
+                            <p class = "big-text" id = "secs">0</p>
+                            <span>seconds</span>
+                          </div>
+                          
+                    </div>
+                    <hr>
+                    <div class = "news1">
+                        <img src = "../img/6.JPG">
+                        <p>2021/08/25</p>
+                        <p>p＆pコラボTシャツ</p>
+                    </div>
+                </section>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <img src = "../img/3.JPG">
+                    <p>artist</p>
+                    <h5>Yuushi Miho</h4>
+                    <a href = "https://www.instagram.com/littboy_xx">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href = "https://twitter.com/littboy_xx">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </aside>
+                <ul>
+                    <li><a href = "">ART</a></li>
+                    <li><a href = "">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <footer>
+                <p class = "page-content">&copy; 2021 littboy.</p>
+                <p class="pagetop">
+                    <a href="#">
+                    <i class="fas fa-chevron-up"></i>
+                    </a>
+                </p>
+        </footer>
+        <script src="main.js"></script>
+    </body>

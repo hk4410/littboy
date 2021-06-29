@@ -1,0 +1,146 @@
+@charset "UTF-8";
+body {
+    font-size: medium;
+}
+header {
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+header img {
+    width: 40%;
+    height: auto;
+}
+main {
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 0.5em 1em;
+    color: #5d627b;
+    background: white;
+    border-top: solid 0px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+dt {
+    padding-left: 40px;
+}
+h2 {
+    font-family: serif;
+}
+h4 {
+    font-family: serif;
+}
+.page1 p {
+    margin: 0;
+    font-size: large;
+    font-family: serif;
+}
+.page2 {
+    display: flex;
+}
+.page2 i {
+    padding-top: 5px;
+}
+
+
+.ccc {
+    display: flex;
+    width: 100%;
+}
+.aaa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+.aaa dd {
+     margin: 0;
+     padding-bottom: 2px;
+}
+.aaa dd input {
+    padding-right: 100%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.aaa dt {
+    padding-left: 0;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.bbb {
+    width: 50%;
+}
+.bbb dd textarea {
+    padding: 10%;
+}
+
+placeholder {
+    font-size: 20px;
+}
+hr {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+}
+
+.page-content {
+    width: 100%;
+}
+.pagetop{
+    display: none;
+    display: block;
+    position: absolute;
+    right: 20%;
+    margin: 0;
+}
+.pagetop a{
+    display: block;
+    font-size: 0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /*background: #7db4e6;*/
+    line-height: 50px;
+}
+.pagetop a i{
+    font-size: 20px;
+    color:#000;
+    line-height: 80px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .ccc {
+        display: flex;
+        flex-direction: column;
+    }
+    .aaa dd input {
+        padding-right: 50%;
+    }
+    .bbb dd {
+        margin: 0;
+        padding: 0;
+        
+    }
+    .bbb textarea {
+        text-align: left;
+        margin-top:20px; 
+        padding: 0;
+    }
+}
